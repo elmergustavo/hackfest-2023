@@ -5,14 +5,25 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: 'jit',
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        Figtree: ['Figtree', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#FF6A38',
+          100: '#FE4311',
+          200: '#EF2907',
+        },
+        secondary: {
+          DEFAULT: '#3A3042',
+          100: '#473A52',
+          200: '#534262',
+        }
       },
     },
   },
   plugins: [],
-}
+};

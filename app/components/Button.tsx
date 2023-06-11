@@ -3,12 +3,13 @@ interface ButtonProps {
     image: string;
     colorOfButton: string;
     classes: string;
+    alt: string;
 }
 
-export default function Button({ text, image, colorOfButton, classes }: ButtonProps) {
+export default function Button({ text, image, colorOfButton, classes, alt }: ButtonProps) {
     return (
         <button className={`${colorOfButton} ${classes}`}>
-            {text === "" ? image : text}
+            {text === "" ? <img src={image} alt={alt} /> : text}
         </button>
     )
 }

@@ -1,0 +1,33 @@
+.progress-bar {
+    height: 4px;
+    border-radius: 29px;
+}
+
+.progress-bar-active {
+    background: #6262DB;
+}
+
+.progress-bar-inactive {
+    background: #ACBDF5;
+}
+
+.input-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid #DBD5E2;
+    border-radius: 8px;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+}
+
+.image-upload>input {
+    display: none;
+}

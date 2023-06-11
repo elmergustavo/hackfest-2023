@@ -9,6 +9,15 @@ h1 {
     color: #1F1A24;
 }
 
+h2 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #1F1A24;
+}
+
 p {
     font-family: 'Figtree';
     font-style: normal;
@@ -24,4 +33,7 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 700;
 }

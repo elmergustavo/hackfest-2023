@@ -10,3 +10,8 @@
   box-sizing: border-box;
   font-family: "Figtree", sans-serif;
 }
+
+@font-face {
+  font-family: CustomFont;
+  src: url('../resources/fonts/Figtree-Regular.ttf');
+}

@@ -1,0 +1,5 @@
+.orange {
+    background: radial-gradient(100% 1280.05% at 0% 0%, #FF6A38 0%, #FFAC38 100%);
+    box-shadow: 2px 2px 8px rgba(204, 100, 65, 0.4);
+    border-radius: 8px;
+}

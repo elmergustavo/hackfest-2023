@@ -19,7 +19,7 @@ const Hero = () => {
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
         <h1 className="hero__title text-primary-200">
-          Dale la bienvenida a una naricita fría
+          DalE la bienvenida a una naricita fría
         </h1>
 
         <p className="hero__subtitle">
@@ -28,13 +28,13 @@ const Hero = () => {
         </p>
 
         <Button
-            {...{
-              text: "¡ Quiero adoptar !",
-              image: "",
-              colorOfButton: "black",
-              classes: "px-[16px] py-[14px] w-[164px] h-[48px] my-[32px]",
-            }}
-          />
+          {...{
+            text: "Empecemos →",
+            image: "",
+            colorOfButton: "orange",
+            classes: "px-[20px] py-[16px] w-[161px] h-[45px] my-[32px]",
+          }}
+        />
       </div>
       <div className="hero__image-container">
         <div className="hero__image">

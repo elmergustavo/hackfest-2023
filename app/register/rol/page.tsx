@@ -1,10 +1,10 @@
-import ProgressBar from "../components/ProgressBar"
-import catBall from "../resources/images/cat-ball.png"
-import arrow from "../resources/images/right-arrow.png"
-import Button from '../components/Button'
-import CardRol from "../components/CardRol"
-import dogAdoption from "../resources/images/dog-adoption.png"
-import catDog from "../resources/images/cat-dog.png"
+import ProgressBar from "../../components/ProgressBar"
+import catBall from "../../resources/images/cat-ball.png"
+import arrow from "../../resources/images/right-arrow.png"
+import Button from '../../components/Button'
+import CardRol from "../../components/CardRol"
+import dogAdoption from "../../resources/images/dog-adoption.png"
+import catDog from "../../resources/images/cat-dog.png"
 
 export default function HomeRol() {
     return (

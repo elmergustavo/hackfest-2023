@@ -4,6 +4,7 @@ import dog from "./resources/images/dog.png";
 import cat from "./resources/images/cat.png";
 import pets from "./resources/images/pets.png";
 import Hero from "./components/Hero";
+import Avatar from "./components/Avatar";
 
 export default function Home() {
   return (
@@ -41,10 +42,12 @@ export default function Home() {
               classes: "px-[16px] py-[14px] w-[164px] h-[48px] my-[32px]",
             }}
           />
+          
           <img src={cat.src} alt="Image of a cat" />
           <h2 className="mt-[56px]">
             ¿Conoces colitas que necesitan de un hogar?
           </h2>
+          
           <p className="mt-[32px]">
             Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
             consectetur. Lorem ipsum dolor sit amet consectetur.
@@ -61,10 +64,14 @@ export default function Home() {
         </div>
       </div>
 
+   
+
       {/* desktock */}
       <div className="hidden md:block overflow-hidden">
+        
         <div className="absolute top-0 left-0 w-full h-96 bg-gradient-to-br from-primary to-primary rounded-md filter blur-3xl opacity-50 -z-50" />
         <Hero />
+        {/* <Avatar /> */}
       </div>
     </>
   );

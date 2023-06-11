@@ -16,3 +16,14 @@
     font-size: 18px;
     color: #FFFFFF;
 }
+
+.outline-black {
+    box-sizing: border-box;
+    border: 1px solid #3A3042;
+    border-radius: 8px;
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1F1A24;
+}

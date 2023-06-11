@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import CustomButton from "./CustomButton";
+import Avatar from "./Avatar";
 
 const NavBar = () => (
   <header className='w-full  absolute z-10 hidden md:block'>
@@ -16,11 +17,12 @@ const NavBar = () => (
         />
       </Link>
 
-      <CustomButton
+      {/* <CustomButton
         title='Sign in'
         btnType='button'
         containerStyles='text-primary-blue rounded-full bg-white min-w-[130px]'
-      />
+      /> */}
+         <Avatar />
     </nav>
   </header>
 );

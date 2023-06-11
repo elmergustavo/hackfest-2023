@@ -1,7 +1,6 @@
 @import "./globals.css";
 
 h1 {
-    font-family: 'Figtree';
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -10,7 +9,6 @@ h1 {
 }
 
 h2 {
-    font-family: 'Figtree';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -19,11 +17,9 @@ h2 {
 }
 
 p {
-    font-family: 'Figtree';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    text-align: center;
     color: #343036;
 }
 
@@ -33,7 +29,14 @@ button {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    font-family: 'Figtree';
     font-style: normal;
     font-weight: 700;
+}
+
+label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    color: #474747;
 }

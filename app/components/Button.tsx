@@ -4,11 +4,12 @@ interface ButtonProps {
     colorOfButton: string;
     classes: string;
     alt: string;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function Button({ text, image, colorOfButton, classes, alt }: ButtonProps) {
+export default function Button({ text, image, colorOfButton, classes, alt, onClick }: ButtonProps) {
     return (
-        <button className={`${colorOfButton} ${classes}`}>
+        <button className={`${colorOfButton} ${classes}`} onClick={onClick} type="button">
             {text === "" ? <img src={image} alt={alt} /> : text}
         </button>
     )

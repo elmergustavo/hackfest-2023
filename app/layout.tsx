@@ -1,6 +1,7 @@
 import "./css/globals.css";
 import "./css/tags.css";
 import "./css/buttons.css";
+import "./css/components.css";
 import { Figtree } from "next/font/google";
 // import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -32,12 +33,12 @@ export default async function RootLayout({
         <ClientOnly>
           <ToasterProvider />
           <LoginModal />
-        <RegisterModal />
-        {/* <Modal secondaryActionLabel='df' actionLabel="Submit"  title="Hello word" isOpen /> */}
-        <Navbar currentUser={currentUser} />
-          
+          <RegisterModal />
+          {/* <Modal secondaryActionLabel='df' actionLabel="Submit"  title="Hello word" isOpen /> */}
+          <Navbar currentUser={currentUser} />
+
         </ClientOnly>
-       
+
         {children}
         <Footer />
       </body>

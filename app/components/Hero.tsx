@@ -2,12 +2,18 @@
 
 import Image from "next/image";
 import { signIn } from "next-auth/react";
+import useRegisterModal from "./hooks/useRegisterModal";
 
+import { useState } from "react";
 // import { CustomButton } from "@components";
 import { CustomButton } from ".";
 // import Button from "./Button";
 import Button from "./modals/Button";
 const Hero = () => {
+
+  const registerModal = useRegisterModal();
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleScroll = () => {
     const nextSection = document.getElementById("discover");
 
@@ -29,13 +35,13 @@ const Hero = () => {
         </p>
 
         <div className="w-1/2">
-        <Button
-          label="Empecemos →"
-          onClick={() => signIn("google", { callbackUrl: "/matches" })}
-        />
+          <Button
+            label="Empecemos →"
+            onClick={registerModal.onOpen}
+          />
         </div>
 
-        
+
       </div>
       <div className="hero__image-container">
         <div className="hero__image">

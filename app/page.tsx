@@ -6,15 +6,18 @@ import { signIn } from "next-auth/react";
 import dog from "./resources/images/dog.png";
 import cat from "./resources/images/cat.png";
 import pets from "./resources/images/pets.png";
+import useRegisterModal from "./components/hooks/useRegisterModal";
+import { useState } from "react";
 import Hero from "./components/Hero";
 
 export default function Home() {
-
+  const registerModal = useRegisterModal();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div className="block md:hidden mx-[20px]">
         <Header />
-        <div className="flex justify-center mt-[56px] flex-col items-center">
+        <div className="flex justify-center mt-20 flex-col items-center">
           <h1>
             Encuentros cercanos del tipo{" "}
             <span className="text-[#6262DB]">~</span>peludo
@@ -24,7 +27,6 @@ export default function Home() {
             consectetur.
           </p>
           <Button
-
             {...{
               text: "Empieza ahora →",
               image: "",

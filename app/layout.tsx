@@ -9,6 +9,7 @@ import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
 import ToasterProvider from "./providers/ToasterProvider";
 import LoginModal from "./components/modals/LoginModal";
+// import Navbar from "./components/Navbar";
 import Navbar from "./components/Navbar";
 import getCurrentUser from "./actions/getCurrentUser";
 

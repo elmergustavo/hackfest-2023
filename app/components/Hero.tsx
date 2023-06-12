@@ -31,6 +31,7 @@ const Hero = () => {
           {...{
             text: "Empecemos →",
             image: "",
+            alt: 'button',
             colorOfButton: "orange",
             classes: "px-[20px] py-[16px] w-[161px] h-[45px] my-[32px]",
           }}

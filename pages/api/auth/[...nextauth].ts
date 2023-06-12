@@ -4,6 +4,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
+import { useRouter } from 'next/navigation'
 
 import prisma from "@/app/libs/prismadb"
 
@@ -53,7 +54,11 @@ export const authOptions: AuthOptions = {
     })
   ],
   pages: {
-    signIn: '/',
+    signIn: '/auth/signin',
+    signOut: '/auth/signout',
+    error: '/auth/error', // Error code passed in query string as ?error=
+    verifyRequest: '/auth/verify-request', // (used for check email message)
+    newUser: '/auth/new-user' // New users will be directed here on first sign in (leave the property out if not of interest)
   },
   debug: process.env.NODE_ENV === 'development',
   session: {

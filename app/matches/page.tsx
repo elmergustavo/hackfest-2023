@@ -4,17 +4,28 @@ import upload from "../resources/images/upload.png"
 import arrow from "../resources/images/right-arrow.png"
 import profile from "../resources/images/profile.png"
 import Button from '../components/Button'
+import Avatar from "../components/Avatar"
+// import getCurrentUser from "./actions/getCurrentUser";
+import getCurrentUser from "../actions/getCurrentUser"
+import { SafeUser } from "../types"
 
-export default function HomeRegister() {
+// interface AvatarProps {
+//     currentUser?: SafeUser | null;
+//   }
+
+
+const  HomeRegister = async () =>  {
+    const currentUser = await getCurrentUser();
     return (
         <main className="flex justify-center flex-col my-[17px] mx-[20px] text-left">
             <div className="flex justify-between">
-                <div className="flex">
-                    <img src={profile.src} alt="profile" className='w-[40px] h-[40px] mr-[4px]' />
-                    <h2>Hola Mario lenguini</h2>
+                <div className="flex space-x-2 justify-start items-center">
+                    {/* <img src={profile.src} alt="profile" className='w-[40px] h-[40px] mr-[4px]' /> */}
+                    <Avatar src={currentUser?.image} />
+                    <h2>{currentUser?.name}</h2>
                 </div>
-                <Button {...{ text: "", image: arrow.src, colorOfButton: "full-black", classes: "px-[19px] py-[13px] w-[56px] h-[40px]", alt: "next" }} />
-            </div>
+                <Button {...{ text: "", image: arrow.src, colorOfButton: "full-black", classes: "px-[19px] py-[13px] w-[56px] h-[40px] rounded-lg", alt: "next" }} />
+            </div>  
             <div className="flex mt-[56px] items-center">
                 <h1 className="text-left">
                     Bienvenido a colitas <span className='text-[#6262DB]'>~</span>
@@ -22,7 +33,7 @@ export default function HomeRegister() {
                 <img src={bone.src} alt="Image of pet bone" className='w-[74px]' />
             </div>
             <p className="mt-[16px] mb-[32px]">Dale un vistazo a tus datos para que todo fluya como los pelos de un gato en el aire.</p>
-            <form>
+            <form className="flex justify-center items-center flex-col">
                 <label htmlFor="photo">Foto del perfil</label>
                 <div className="image-upload self-center mb-[24px]">
                     <label htmlFor="file-input">
@@ -41,3 +52,5 @@ export default function HomeRegister() {
         </main>
     )
 }
+
+export default HomeRegister;

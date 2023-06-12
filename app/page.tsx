@@ -12,11 +12,7 @@ import pets from "./resources/images/pets.png";
 import Hero from "./components/Hero";
 
 export default function Home() {
-
-  const handleAuth  =() => {
-    signIn("google")
-
-  }
+  
   return (
     <>
       <div className="block md:hidden mx-[20px]">
@@ -34,7 +30,7 @@ export default function Home() {
           <Button
           
             label="Empecemos →"
-            onClick={handleAuth}
+            onClick={() => signIn("google", {callbackUrl: '/matches'})}
           />
           {/* <Button
           

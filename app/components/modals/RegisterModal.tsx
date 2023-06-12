@@ -106,7 +106,7 @@ const RegisterModal= () => {
         outline 
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={() => signIn('google')} 
+        onClick={() => signIn('google', {callbackUrl: '/matches'})} 
       />
       <Button 
         outline 

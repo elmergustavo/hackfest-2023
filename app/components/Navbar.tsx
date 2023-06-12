@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
     <header className="w-full  absolute z-10 hidden md:block">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent">
         <Image
-          src="/logo.png"
+          src="/logo.svg"
           alt="logo"
           width={120}
           height={120}
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
                 containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
               /> */}
 
-              <Button label="Empecemos →" onClick={registerModal.onOpen} />
+              <Button label="Iniciar Sesión" onClick={registerModal.onOpen} />
             </>
           )}
         </Link>

@@ -28,8 +28,8 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
         <Image
           src="/logo.png"
           alt="logo"
-          width={90}
-          height={90}
+          width={120}
+          height={120}
           className="object-contain"
         />
         <Link href="/" className="flex justify-center items-center">
@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
                 containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
               /> */}
 
-              <Button  label="Empecemos →" onClick={registerModal.onOpen} />
+              <Button label="Empecemos →" onClick={registerModal.onOpen} />
             </>
           )}
         </Link>

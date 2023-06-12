@@ -1,8 +1,9 @@
 import ProgressBar from "../components/ProgressBar";
 import bone from "../resources/images/bone.png";
-import upload from "../resources/images/upload.png";
+import heart from "../resources/images/heart.png";;
 import arrow from "../resources/images/right-arrow.png";
-import profile from "../resources/images/profile.png";
+import catTinder from "../resources/images/cat-tinder.png";
+import close from "../resources/images/Close.png";
 import Button from "../components/Button";
 import Avatar from "../components/Avatar";
 // import getCurrentUser from "./actions/getCurrentUser";
@@ -36,57 +37,11 @@ const HomeRegister = async () => {
           />
         </Link> */}
       </div>
-      <div className="flex mt-[56px] items-center">
-        <h1 className="text-left">
-          Bienvenido a colitas <span className="text-[#6262DB]">~</span>
-        </h1>
-        <img src={bone.src} alt="Image of pet bone" className="w-[74px]" />
+      <img src={catTinder.src} alt="cat" className="my-[16px]" />
+      <div className="flex mx-[84px]">
+        <button className="bg-black text-white px-6 py-2 mr-[24px]" type="submit"> <img src={close.src} alt="not match" /> </button>
+        <button className="bg-primary text-white px-6 py-2 w-[112px]" type="submit"> <img src={heart.src} alt="match" /> </button>
       </div>
-      <p className="mt-[16px] mb-[32px]">
-        Dale un vistazo a tus datos para que todo fluya como los pelos de un
-        gato en el aire.
-      </p>
-      <form className="flex justify-center items-center flex-col">
-        <label htmlFor="photo">Foto del perfil</label>
-        <div className="image-upload self-center mb-[24px]">
-          <label htmlFor="file-input">
-            <img src={upload.src} />
-          </label>
-          <input id="file-input" type="file" name="photo" />
-        </div>
-        <label htmlFor="name">Nombre</label>
-        <input
-          type="text"
-          placeholder="Escribe tu nombre"
-          required
-          className="mt-[8px] input-form mb-[24px]"
-          name="name"
-        />
-        <label htmlFor="phone">Teléfono</label>
-        <input
-          type="text"
-          placeholder="Escribe tu número celular"
-          required
-          className="mt-[8px] input-form"
-          name="phone"
-        />
-        <div className="flex justify-end">
-          {/* <Link href="/register/finished">
-            <Button
-              {...{
-                text: "",
-                image: arrow.src,
-                colorOfButton: "full-orange",
-                classes:
-                  "px-[19px] py-[13px] w-[56px] h-[40px] mt-[37px] mb-[32px]",
-                alt: "next",
-              }}
-            />
-          </Link> */}
-
-          <button className="bg-primary text-white px-6 py-2" type="submit"> <img src={arrow.src} alt="logo" /> </button>
-        </div>
-      </form>
     </main>
   );
 };

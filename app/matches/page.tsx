@@ -3,7 +3,7 @@ import bone from "../resources/images/bone.png";
 import heart from "../resources/images/heart.png";;
 import arrow from "../resources/images/right-arrow.png";
 import catTinder from "../resources/images/cat-tinder.png";
-import close from "../resources/images/close.png";
+import close from "../resources/images/Close.png";
 import Button from "../components/Button";
 import Avatar from "../components/Avatar";
 // import getCurrentUser from "./actions/getCurrentUser";

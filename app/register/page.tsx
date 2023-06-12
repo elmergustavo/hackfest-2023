@@ -1,10 +1,14 @@
+'use client';
+
 import ProgressBar from "../components/ProgressBar"
 import bone from "../resources/images/bone.png"
 import upload from "../resources/images/upload.png"
 import arrow from "../resources/images/right-arrow.png"
 import Button from '../components/Button'
+import { useRouter } from 'next/navigation';
 
 export default function HomeRegister() {
+    const router = useRouter();
     return (
         <main className="flex justify-center flex-col my-[17px] mx-[20px] text-left">
             <div className="grid grid-cols-3 gap-x-3 w-full">
@@ -32,7 +36,7 @@ export default function HomeRegister() {
                 <label htmlFor="phone">Teléfono</label>
                 <input type="text" placeholder="Escribe tu número celular" required className="mt-[8px] input-form" name="phone" />
                 <div className="flex justify-end">
-                    <Button {...{ text: "", image: arrow.src, colorOfButton: "full-orange", classes: "px-[19px] py-[13px] w-[56px] h-[40px] mt-[37px] mb-[32px]", alt: "next" }} />
+                    <Button {...{ text: "", image: arrow.src, colorOfButton: "full-orange", classes: "px-[19px] py-[13px] w-[56px] h-[40px] mt-[37px] mb-[32px]", alt: "next", onClick: () => router.push('/register/rol') }} />
                 </div>
             </form>
         </main>

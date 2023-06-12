@@ -12,7 +12,7 @@ export default function Header() {
             </p>
 
             <button
-            onClick={() => signIn('google')} 
+            onClick={() => signIn("google", {callbackUrl: '/matches'})}
             className="p-3 rounded-md  bg-primary text-white">
                 Empecemos
             </button>

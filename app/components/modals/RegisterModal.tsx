@@ -104,15 +104,15 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Continue with Google"
+        label="Continuar con Google"
         icon={FcGoogle}
         onClick={() => signIn('google', {callbackUrl: '/matches'})} 
       />
       <Button 
         outline 
-        label="Continue with Github"
+        label="Continuar con Github"
         icon={AiFillGithub}
-        onClick={() => signIn('github')}
+        onClick={() => signIn('github', {callbackUrl: '/matches'})} 
       />
       <div 
         className="
@@ -122,7 +122,7 @@ const RegisterModal= () => {
           font-light
         "
       >
-        <p>Already have an account?
+        <p>¿Ya tienes una cuenta?
           <span 
             onClick={onToggle} 
             className="
@@ -130,7 +130,7 @@ const RegisterModal= () => {
               cursor-pointer 
               hover:underline
             "
-            > Log in</span>
+            > Iniciar Sesión</span>
         </p>
       </div>
     </div>
@@ -140,8 +140,8 @@ const RegisterModal= () => {
     <Modal
       disabled={isLoading}
       isOpen={registerModal.isOpen}
-      title="Register"
-      actionLabel="Continue"
+      title="Registrarse"
+      actionLabel="Continuar"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
       body={bodyContent}

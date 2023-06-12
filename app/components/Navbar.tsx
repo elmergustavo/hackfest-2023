@@ -9,6 +9,7 @@ import { signOut } from "next-auth/react";
 import useRegisterModal from "./hooks/useRegisterModal";
 import { useState } from "react";
 import { User } from "@prisma/client";
+import Button from "./modals/Button";
 import { SafeUser } from "../types";
 
 interface NavbarProps {
@@ -25,10 +26,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
     <header className="w-full  absolute z-10 hidden md:block">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4 bg-transparent">
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="logo"
-          width={118}
-          height={18}
+          width={90}
+          height={90}
           className="object-contain"
         />
         <Link href="/" className="flex justify-center items-center">
@@ -37,25 +38,25 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
               <div className="flex items-center justify-end gap-3 ">
                 <Avatar src={currentUser?.image} />
                 <CustomButton
-                title="Cerrar Sesión"
-                handleClick={() => signOut()}
-                btnType="button"
-                containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-              />
-                
+                  title="Cerrar Sesión"
+                  handleClick={() => signOut()}
+                  btnType="button"
+                  containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
+                />
               </div>
             </>
           ) : (
             <>
-              <CustomButton
+              {/* <CustomButton
                 title="Sign in"
                 handleClick={registerModal.onOpen}
                 btnType="button"
                 containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-              />
+              /> */}
+
+              <Button  label="Empecemos →" onClick={registerModal.onOpen} />
             </>
           )}
-          
         </Link>
       </nav>
     </header>

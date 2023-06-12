@@ -68,12 +68,12 @@ const RegisterModal= () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Welcome to colitas"
-        subtitle="Create an account!"
+        title="Bienvenido a colitas"
+        subtitle="Crea tu cuenta!"
       />
       <Input
         id="email"
-        label="Email"
+        label="Correo electrónico"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -81,7 +81,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Name"
+        label="Nomrbre"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -89,7 +89,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Contraseña"
         type="password"
         disabled={isLoading}
         register={register}

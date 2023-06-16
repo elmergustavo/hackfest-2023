@@ -9,7 +9,6 @@ import pets from "./resources/images/pets.png";
 import useRegisterModal from "./components/hooks/useRegisterModal";
 import { useState } from "react";
 import Hero from "./components/Hero";
-import Image from "next/image";
 
 export default function Home() {
   const registerModal = useRegisterModal();
@@ -45,10 +44,10 @@ export default function Home() {
               alt: "log",
               colorOfButton: "orange",
               classes: "px-[20px] py-[16px] w-[200px] h-[45px]",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
-          <Image src={dog.src} alt="Image of a dog" />
+          <img src={dog.src} alt="Image of a dog" />
         </section>
 
         <section className="flex flex-col gap-8 items-center">
@@ -64,10 +63,10 @@ export default function Home() {
               colorOfButton: "black",
               classes: "px-[16px] py-[14px] w-[180px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
-          <Image src={cat.src} alt="Image of a cat" />
+          <img src={cat.src} alt="Image of a cat" />
         </section>
 
         <section className="flex flex-col gap-8 items-center">
@@ -83,10 +82,10 @@ export default function Home() {
               colorOfButton: "black",
               classes: "px-[16px] py-[14px] w-[240px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
-          <Image src={pets.src} alt="Images of pets" className="mb-[24px]" />
+          <img src={pets.src} alt="Images of pets" className="mb-[24px]" />
         </section>
       </div>
 

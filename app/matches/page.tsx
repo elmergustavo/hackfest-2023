@@ -19,7 +19,6 @@ const HomeRegister = async () => {
       </div>
       <div className="w-full my-[16px] relative flex items-center justify-center rounded-[16px]">
         <img src={catTinder.src} alt="cat" className="w-full h-[576px]" />
-        <p className="card-title absolute mx-[16px]"></p>
         <p className="absolute bottom-[16px] mx-[16px]">
           <span className="card-title block mb-[8px]">Juan<span className='text-[#6262DB] mx-[4px]'>~</span><span className="card-subtitle">1 año</span></span>
           <span className="card-text ">Gato copo de nieve amoroso curioso jugueton ideal para cualquiera</span>

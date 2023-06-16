@@ -57,3 +57,24 @@
 .image-tinder {
     border-radius: 16px;
 }
+
+.card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.card-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #EEEEEE;
+}

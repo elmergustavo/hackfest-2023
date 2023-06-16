@@ -9,18 +9,18 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative bg-white">
-      <main className=" items-center fixed top-0 left-0 right-0 px-5 bg-white border-b-4  ">
-        <div className="py-4 flex justify-between items-center">
+      <main className=" items-center fixed top-0 left-0 right-0 px-5 bg-white border-b-2">
+        <div className="py-2 flex justify-between items-center box-border">
           <Image
             src="/logo.svg"
             alt="logo"
-            width={118}
-            height={18}
+            width={108}
+            height={40}
             className="object-contain"
           />
           <button
             onClick={registerModal.onOpen}
-            className="p-3 rounded-md  bg-primary text-white"
+            className="p-[10px] rounded-md bg-primary text-white text-[16px] leading-[19px]"
           >
             Empecemos
           </button>

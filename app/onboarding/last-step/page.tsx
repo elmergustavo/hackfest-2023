@@ -3,14 +3,15 @@ import ProgressBar from "../../components/ProgressBar";
 import cuteCat from "../../resources/images/cute-cat.png";
 import Button from "../../components/Button";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function HomeRol() {
   const [rol, setRol] = useState("");
-  if (typeof window !== "undefined") {
+  useEffect(() => {
     const personRol = localStorage.getItem("personRol") || "";
     setRol(personRol);
-  }
+  }, []);
+ 
   const router = useRouter();
   return (
     <main className="flex justify-center flex-col my-[17px] mx-[20px] text-left">

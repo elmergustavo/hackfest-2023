@@ -3,10 +3,11 @@ import ProgressBar from "../../components/ProgressBar";
 import cuteCat from "../../resources/images/cute-cat.png";
 import Button from "../../components/Button";
 import { useRouter } from "next/navigation";
-import { log } from "console";
 
 export default function HomeRol() {
-  const personRol = localStorage.getItem("personRol");
+  if (typeof window !== "undefined") {
+    const personRol = localStorage.getItem("personRol");
+  }
   const router = useRouter();
   return (
     <main className="flex justify-center flex-col my-[17px] mx-[20px] text-left">

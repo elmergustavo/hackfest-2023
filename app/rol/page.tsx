@@ -6,7 +6,6 @@ import icon_button from "../resources/images/Icon_button.png";
 export default function page() {
   return (
     <section className="section-rol">
-        
       <div className="class-fantasma">
         <p>.</p>
       </div>

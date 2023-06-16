@@ -65,7 +65,7 @@ export default function HomeRegister() {
             name="phone"
           />
         </div>
-        <div className="flex flex-row justify-end mt-8">
+        <div className="flex flex-row justify-end mt-10">
           <Button
             {...{
               text: "",

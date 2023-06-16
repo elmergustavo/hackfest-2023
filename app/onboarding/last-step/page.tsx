@@ -21,7 +21,7 @@ export default function HomeRol() {
             <img src={cuteCat.src} alt="Cute cat" className='my-[32px]' />
             <div className="flex items-center flex-col">
                 <Button {...{ text: "¡ Iniciemos la aventura !", image: "", colorOfButton: "orange", classes: "px-[20px] py-[16px] w-[250px] h-[45px]", alt: "", onClick: () => router.push('/matches') }} />
-                <Button {...{ text: "Ir al paso anterior", image: "", colorOfButton: "outline-black", classes: "px-[16px] py-[14px] w-[164px] h-[40px] mt-[16px] mb-[62px]", alt: "", onClick: () => router.push('/register/rol') }} />
+                <Button {...{ text: "Ir al paso anterior", image: "", colorOfButton: "outline-black", classes: "px-[16px] py-[14px] w-[164px] h-[40px] mt-[16px] mb-[62px]", alt: "", onClick: () => router.push('/onboarding/second-step') }} />
             </div>
         </main>
     )

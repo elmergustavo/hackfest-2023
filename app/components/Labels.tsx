@@ -3,7 +3,7 @@ interface LabelsProps {
     classes: string;
 }
 
-export default function ({ text, classes }: LabelsProps) {
+export default function Labels({ text, classes }: LabelsProps) {
     return (
         <div className={`${classes} labels-card`}>
             {text}

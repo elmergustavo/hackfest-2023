@@ -15,30 +15,44 @@ export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="block md:hidden mx-[20px]">
+      <div className="md:hidden mx-[20px] flex gap-14 flex-col">
         <Header />
-        <div className="flex justify-center mt-20 flex-col items-center">
-          <h1>
-            Encuentros cercanos del tipo{" "}
-            <span className="text-[#6262DB]">~</span>peludo
-          </h1>
-          <p className="my-[32px] mb-3">
-            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-            consectetur.
-          </p>
+        <section className="flex flex-col gap-8 items-center mt-14">
+          <div className="w-[320px] relative -z-40">
+            <h1 className="leading-[120%]">Encuentros cercanos del tipo</h1>
+            <h1 className="leading-[120%]">peludo</h1>
+            <h1 className="text-[#6262DB] absolute left-[81px] top-[86px] -z-40">
+              ~
+            </h1>
+          </div>
+          <div className="flex flex-col gap-0 items-center">
+            <p className="leading-[140%] text-center text-[#474747]">
+              ¿Estas en busca de un nuevo compañero en tu vida?
+            </p>
+            <p className="text-[#6262DB] font-semibold leading-[140%] text-center">
+              o
+            </p>
+            <p className="leading-[140%] text-center text-[#474747]">
+              ¿Buscas darle un hogar a alguno?
+            </p>
+          </div>
+
           <Button
             {...{
               text: "Empieza ahora →",
               image: "",
-              alt: 'log',
+              alt: "log",
               colorOfButton: "orange",
-              classes: "px-[20px] py-[16px] w-[200px] h-[45px] my-[32px]",
-              onClick: () => signIn("google", { callbackUrl: '/register' })
+              classes: "px-[20px] py-[16px] w-[200px] h-[45px]",
+              onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
-          <img src={dog.src} alt="Image of a dog" className="mt-[32px]" />
-          <h2 className="mt-[56px]">Dale la bienvenida a una naricita fría</h2>
-          <p className="mt-[32px]">
+          <img src={dog.src} alt="Image of a dog" />
+        </section>
+
+        <section className="flex flex-col gap-8 items-center">
+          <h2>Dale la bienvenida a una naricita fría</h2>
+          <p className="leading-[140%] text-center text-[#474747] text-base">
             Anímate a encontrar el match perfecto para el resto de tu vida, tu
             nuevo mejor amigo y vos lo agradecerán
           </p>
@@ -47,31 +61,32 @@ export default function Home() {
               text: "¡ Quiero adoptar !",
               image: "",
               colorOfButton: "black",
-              classes: "px-[16px] py-[14px] w-[180px] h-[48px] my-[32px]",
+              classes: "px-[16px] py-[14px] w-[180px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: '/register' })
+              onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
           <img src={cat.src} alt="Image of a cat" />
-          <h2 className="mt-[56px]">
-            ¿Conoces colitas que necesitan de un hogar?
-          </h2>
-          <p className="mt-[32px]">
-            Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-            consectetur. Lorem ipsum dolor sit amet consectetur.
+        </section>
+
+        <section className="flex flex-col gap-8 items-center">
+          <h2>¿Conoces colitas que necesitan de un hogar?</h2>
+          <p className="leading-[140%] text-center text-[#474747] text-base">
+            No esperes mas!, con Colitas podrás encontrar mas fácil a esa
+            persona ideal que necesita esa o esas colitas en su vida
           </p>
           <Button
             {...{
               text: "¡ Quiero dar en adopción !",
               image: "",
               colorOfButton: "black",
-              classes: "px-[16px] py-[14px] w-[240px] h-[40px] my-[32px]",
+              classes: "px-[16px] py-[14px] w-[240px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: '/register' })
+              onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
-          <img src={pets.src} alt="Images of pets" className="mb-[56px]" />
-        </div>
+          <img src={pets.src} alt="Images of pets" className="mb-[24px]" />
+        </section>
       </div>
 
       {/* desktock */}

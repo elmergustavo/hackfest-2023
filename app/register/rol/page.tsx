@@ -7,6 +7,7 @@ import CardRol from "../../components/CardRol"
 import dogAdoption from "../../resources/images/dog-adoption.png"
 import catDog from "../../resources/images/cat-dog.png"
 import { useRouter } from 'next/navigation';
+import Image from "next/image";
 
 export default function HomeRol() {
     const router = useRouter();
@@ -21,7 +22,7 @@ export default function HomeRol() {
                 <h1 className="text-left">
                     Escoge tu rol a adoptar
                 </h1>
-                <img src={catBall.src} alt="Image of a ball of wool" className='w-[74px]' />
+                <Image src={catBall.src} alt="Image of a ball of wool" className='w-[74px]' />
             </div>
             <p className="mt-[16px] mb-[32px]">¿Eres una persona que tiene el deseo de darle la bienvenida a una almita muy especial o eres una persona que sabe de un almita que lo necesita?</p>
             <CardRol {...{ text: "Quiero adoptar", image: dogAdoption.src, classes: "mb-[24px]", alt: "I want to adopt" }} />

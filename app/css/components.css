@@ -57,3 +57,54 @@
 .image-tinder {
     border-radius: 16px;
 }
+
+.card-xl-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FFFFFF;
+}
+
+.card-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.card-subtitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.card-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #EEEEEE;
+}
+
+.labels-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    background: #DBD5E2;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #473A52;
+    min-width: 70px;
+}
+
+.h3-card {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #3A3042;
+}

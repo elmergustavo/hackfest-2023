@@ -3,10 +3,13 @@ import ProgressBar from "../../components/ProgressBar";
 import cuteCat from "../../resources/images/cute-cat.png";
 import Button from "../../components/Button";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function HomeRol() {
+  const [rol, setRol] = useState("");
   if (typeof window !== "undefined") {
-    const personRol = localStorage.getItem("personRol");
+    const personRol = localStorage.getItem("personRol") || "";
+    setRol(personRol);
   }
   const router = useRouter();
   return (
@@ -32,10 +35,9 @@ export default function HomeRol() {
             classes: "px-[20px] py-[16px] w-[250px] h-[45px]",
             alt: "",
             onClick: () => {
-              console.log(personRol);
-              if (personRol === "giver") {
+              if (rol === "giver") {
                 router.push("/");
-              } else if (personRol === "adopter") {
+              } else if (rol === "adopter") {
                 router.push("/matches");
               }
             },

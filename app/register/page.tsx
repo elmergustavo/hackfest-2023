@@ -6,7 +6,6 @@ import upload from "../resources/images/upload.png"
 import arrow from "../resources/images/right-arrow.png"
 import Button from '../components/Button'
 import { useRouter } from 'next/navigation';
-import Image from "next/image";
 
 export default function HomeRegister() {
     const router = useRouter();
@@ -21,14 +20,14 @@ export default function HomeRegister() {
                 <h1 className="text-left">
                     Bienvenido a colitas <span className='text-[#6262DB]'>~</span>
                 </h1>
-                <Image src={bone.src} alt="Image of pet bone" className='w-[74px]' />
+                <img src={bone.src} alt="Image of pet bone" className='w-[74px]' />
             </div>
             <p className="mt-[16px] mb-[32px]">Dale un vistazo a tus datos para que todo fluya como los pelos de un gato en el aire.</p>
             <form>
                 <label htmlFor="photo">Foto del perfil</label>
                 <div className="image-upload self-center mb-[24px]">
                     <label htmlFor="file-input">
-                        <Image src={upload.src} alt="upload" />
+                        <img src={upload.src} alt="upload" />
                     </label>
                     <input id="file-input" type="file" name="photo" />
                 </div>

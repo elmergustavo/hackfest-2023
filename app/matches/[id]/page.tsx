@@ -3,15 +3,14 @@ import arrow from "../../resources/images/right-arrow.png";
 import Link from 'next/link'
 import catTinder from "../../resources/images/cat-tinder.png";
 import Labels from "../../components/Labels";
-import Image from "next/image";
 
 const MatchesId = async () => {
     return (
         <main >
             <div className="relative">
-                <Image src={catTinder.src} alt="cat" className="w-full h-[576px]" />
+                <img src={catTinder.src} alt="cat" className="w-full h-[576px]" />
                 <div className="absolute top-[24px] mx-[20px]">
-                    <Link href={`/matches`}><Image src={arrow.src} alt="next" className="full-black px-[8px] py-[8px] w-[40px] h-[40px] rotate-180" /></Link>
+                    <Link href={`/matches`}><img src={arrow.src} alt="next" className="full-black px-[8px] py-[8px] w-[40px] h-[40px] rotate-180" /></Link>
                 </div>
                 <div className="absolute bottom-[16px] mx-[16px]">
                     <span className="card-xl-title mx-[16px]">Maximiliano</span>

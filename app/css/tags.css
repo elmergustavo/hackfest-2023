@@ -1,42 +1,43 @@
 @import "./globals.css";
 
 h1 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    text-align: center;
-    color: #1F1A24;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  color: #1f1a24;
 }
 
 h2 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: #1F1A24;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #1f1a24;
 }
 
 p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    color: #343036;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #343036;
 }
 
 button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
 }
 
 label {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 110%;
-    color: #474747;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  color: #474747;
 }

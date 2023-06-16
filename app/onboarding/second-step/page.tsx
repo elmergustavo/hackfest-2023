@@ -12,9 +12,11 @@ import Image from "next/image";
 import Toggle1 from "../../components/Toggle1";
 import Toggle2 from "@/app/components/Toggle2";
 import { useState } from "react";
+import { log } from "console";
 export default function HomeRol() {
   const [isActiveTg1, setActiveTg1] = useState(false);
   const [isActiveTg2, setActiveTg2] = useState(false);
+  const [rol, setRol] = useState("");
   const router = useRouter();
   return (
     <>
@@ -49,6 +51,9 @@ export default function HomeRol() {
             onClick={() => {
               setActiveTg1(true);
               setActiveTg2(false);
+              setRol("adopter");
+              console.log(rol);
+              localStorage.setItem('personRol', "adopter");
             }}
           >
             <Toggle1
@@ -61,6 +66,9 @@ export default function HomeRol() {
             onClick={() => {
               setActiveTg1(false);
               setActiveTg2(true);
+              setRol("giver");
+              console.log(rol);
+              localStorage.setItem('personRol', "giver");
             }}
           >
             <Toggle2

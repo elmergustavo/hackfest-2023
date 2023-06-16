@@ -44,7 +44,7 @@ export default function Home() {
               alt: "log",
               colorOfButton: "orange",
               classes: "px-[20px] py-[16px] w-[200px] h-[45px]",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
           <img src={dog.src} alt="Image of a dog" />
@@ -63,7 +63,7 @@ export default function Home() {
               colorOfButton: "black",
               classes: "px-[16px] py-[14px] w-[180px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
           <img src={cat.src} alt="Image of a cat" />
@@ -82,7 +82,7 @@ export default function Home() {
               colorOfButton: "black",
               classes: "px-[16px] py-[14px] w-[240px] h-[40px]",
               alt: "",
-              onClick: () => signIn("google", { callbackUrl: "/register" }),
+              onClick: () => signIn("google", { callbackUrl: "/onboarding/first-step" }),
             }}
           />
           <img src={pets.src} alt="Images of pets" className="mb-[24px]" />

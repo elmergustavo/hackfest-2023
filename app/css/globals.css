@@ -224,7 +224,109 @@
 }
 /* END: search manufacturer styles */
 .class-rol-title{
-  margin: 56px 20px 0 20px;
+  margin: 100px auto 0 auto;
+  width: 55%;
+}
+.class-rol-title .class-rol-title-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.class-rol-title .class-rol-title-img h1{
+  margin-right: 10px;
+
+}
+.class-role-section{
+  width: 75%;
+  margin: 0 auto;
+  /*background: orange;*/
+  padding: 20px;
+}
+.class-role-section .class-role-section-one{
+  width: 75%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: solid orange 2px;
+  cursor: pointer;
+}
+.class-role-section .class-role-section-one:hover{
+  background: orange;
+  transform: scale(1.05);
+  transition: 400ms;
+}
+.class-role-section-one .class-role-title2{
+  width: 50%;
+  /*background: pink;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.class-role-section-one .class-role-title2 p{
+  font-size: 3em;
+}
+.class-role-section-one img{
+  width: 30%;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+.class-footer-rol{
+  width: 55%;
+  margin: 0 auto;
+  /*background: orange;*/
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.class-footer-rol .title-back{
+  margin: 0 20px;
+  font-size: 1em;
+}
+.class-footer-rol .title-back p{
+  font-weight: bold;
+}
+.class-footer-rol .next-img{
+     width: 15%;
+     background: orangered;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+}
+.class-footer-rol .next-img:hover{
+  transform: scale(1.08);
+  transition: 400ms;
+}
+.class-footer-rol .next-img p{
+  font-size: 2.5em;
+  color: white;
+}
+.class-footer-rol .title-back{
+  padding: 2px;
+  border: solid 1px black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  cursor: pointer;
+}
+@media screen and (max-width:420px){
+  .class-fantasma p{
+    color: white;
+  }
+  .class-rol-title{
+  width: 100%;
+  margin: 50px auto 0 auto;
+  /*background: orange;*/
+  padding: 0 20px;
 }
 .class-rol-title .class-rol-title-img {
  /* background: orange;*/
@@ -232,43 +334,48 @@
   justify-content: space-between;
   align-items: end;
 }
+.class-role-section{
+  width: 90%;
+  /*background: orange;*/
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+.class-role-section .class-role-section-one{
+  width: 100%;
+  /*background: green;*/
+  margin: 25px 0;
+}
 .class-rol-title .class-rol-title-img  img{
   width: 30%;
   height: 20%;
   /*background: green;*/
   
 }
-.class-rol-title p{
-  text-align: justify;
-  font-size: 16px;
-  margin: 30px 0;
+
+.class-role-section-one .class-role-title p{
+  font-size: 1em;
 }
 .class-rol-title h1{
   font-size: 32px;
   text-align: left;
 }
-.class-role-section{
-  width: 90%;
-  margin: 0 auto;
-}
-.class-role-section-one{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: solid 1px orangered;
-  margin: 20px 0;
-}
-.class-role-section-one  .class-role-title {
+
+.class-role-section-one  .class-role-title2 {
     width: 50%;
-   
+    height: 100%;
     padding: 1em;
+    /*background: pink;*/
+    align-items: normal;
+}
+.class-role-section-one  .class-role-title2 p{
+  font-size: 1em;
 }
 .class-role-section-one img{
-  margin-top: 30px;
+  width: 50%;
+  height: 100%;
+  margin-top: 50px;
   border-radius: 20px;
+  /*background: gray;*/
 }
 
 .class-footer-rol{
@@ -292,4 +399,13 @@
 }
 .class-footer-rol{
   display: flex;
+}    
+
+.class-footer-rol .next-img{
+  width: 20%;
+}
+.class-footer-rol .next-img p{
+  font-size: 1.60em;
+  color: white;
+}
 }

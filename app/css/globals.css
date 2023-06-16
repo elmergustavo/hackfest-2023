@@ -223,7 +223,47 @@
   @apply cursor-default select-none py-2 pl-10 pr-4;
 }
 /* END: search manufacturer styles */
-.class-rol-title{
+.class-role-section{
+  width: 75%;
+  margin: 0 auto;
+  /*background: orange;*/
+  padding: 20px;
+}
+.class-role-section .class-role-section-one{
+  width: 75%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: solid orange 2px;
+  cursor: pointer;
+}
+.class-role-section .class-role-section-one:hover{
+  background: orange;
+  transform: scale(1.08);
+  transition: 400ms;
+}
+.class-role-section-one .class-role-title{
+  width: 50%;
+  /*background: pink;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.class-role-section-one .class-role-title p{
+  font-size: 3em;
+}
+.class-role-section-one img{
+  width: 30%;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+
+
+@media screen and (max-width:420px){
+  .class-rol-title{
   margin: 56px 20px 0 20px;
 }
 .class-rol-title .class-rol-title-img {
@@ -292,4 +332,6 @@
 }
 .class-footer-rol{
   display: flex;
+}    
+
 }

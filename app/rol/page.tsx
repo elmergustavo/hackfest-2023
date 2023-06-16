@@ -5,7 +5,7 @@ import dog_two from "../resources/images/dog_two.png";
 import icon_button from "../resources/images/Icon_button.png";
 export default function page() {
   return (
-    <section className="">
+    <section className="section-rol">
       <div className="class-rol-title">
         <div className="class-rol-title-img">
           <h1>Escoge tu rol a adoptar</h1>

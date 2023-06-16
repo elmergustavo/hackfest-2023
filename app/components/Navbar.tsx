@@ -11,6 +11,7 @@ import { useState } from "react";
 import { User } from "@prisma/client";
 import Button from "./modals/Button";
 import { SafeUser } from "../types";
+import UserMenu from "./UserMenu";
 
 interface NavbarProps {
   currentUser?: SafeUser | null;
@@ -33,30 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentUser }) => {
           className="object-contain"
         />
         <Link href="/" className="flex justify-center items-center">
-          {currentUser ? (
-            <>
-              <div className="flex items-center justify-end gap-3 ">
-                <Avatar src={currentUser?.image} />
-                <CustomButton
-                  title="Cerrar Sesión"
-                  handleClick={() => signOut()}
-                  btnType="button"
-                  containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-                />
-              </div>
-            </>
-          ) : (
-            <>
-              {/* <CustomButton
-                title="Sign in"
-                handleClick={registerModal.onOpen}
-                btnType="button"
-                containerStyles="text-primary-blue rounded-full bg-white min-w-[130px]"
-              /> */}
-
-              <Button label="Iniciar Sesión" onClick={registerModal.onOpen} />
-            </>
-          )}
+          <UserMenu currentUser={currentUser}  />
         </Link>
       </nav>
     </header>

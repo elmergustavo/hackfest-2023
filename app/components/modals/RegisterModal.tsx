@@ -48,7 +48,7 @@ const RegisterModal= () => {
 
     axios.post('/api/register', data)
     .then(() => {
-      toast.success('Registered!');
+      toast.success('Su Cuenta se ha registrado!');
       registerModal.onClose();
       loginModal.onOpen();
     })
@@ -104,13 +104,13 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Continuar con Google"
+        label="Registrarse con Google"
         icon={FcGoogle}
         onClick={() => signIn('google', {callbackUrl: '/matches'})} 
       />
       <Button 
         outline 
-        label="Continuar con Github"
+        label="Registrarse con Github"
         icon={AiFillGithub}
         onClick={() => signIn('github', {callbackUrl: '/matches'})} 
       />

@@ -54,7 +54,7 @@ const LoginModal = () => {
       setIsLoading(false);
 
       if (callback?.ok) {
-        toast.success('Logged in');
+        toast.success('Conectado');
         router.refresh();
         loginModal.onClose();
       }
@@ -101,13 +101,13 @@ const LoginModal = () => {
       <hr />
       <Button 
         outline 
-        label="Continuar con Google"
+        label="Iniciar sesión con Google"
         icon={FcGoogle}
         onClick={() => signIn('google')}
       />
       <Button 
         outline 
-        label="Continuar con Github"
+        label="Iniciar sesión con Github"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
@@ -131,7 +131,7 @@ const LoginModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="Login"
+      title="Iniciar Sesión"
       actionLabel="Continuar"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}

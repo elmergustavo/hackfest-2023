@@ -46,7 +46,7 @@ export default function page() {
           <p>Ir al paso anterior</p>
         </a>
         <a className="next-img">
-          <img src={icon_button.src} alt="" />
+          <p>→</p>
         </a>
       </div>
     </section>

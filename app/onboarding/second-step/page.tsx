@@ -3,9 +3,6 @@ import ProgressBar from "../../components/ProgressBar";
 import catBall from "../../resources/images/cat-ball.png";
 import arrow from "../../resources/images/right-arrow.png";
 import Button from "../../components/Button";
-import CardRol from "../../components/Toggle1";
-import dogAdoption from "../../resources/images/dog-adoption.png";
-import catDog from "../../resources/images/cat-dog.png";
 
 import lana from "../../resources/images/lana.png";
 import dog_one from "../../resources/images/dog_one.png";
@@ -14,7 +11,10 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Toggle1 from "../../components/Toggle1";
 import Toggle2 from "@/app/components/Toggle2";
+import { useState } from "react";
 export default function HomeRol() {
+  const [isActiveTg1, setActiveTg1] = useState(false);
+  const [isActiveTg2, setActiveTg2] = useState(false);
   const router = useRouter();
   return (
     <>
@@ -45,8 +45,30 @@ export default function HomeRol() {
         </section>
 
         <section className="flex flex-col gap-6 mt-8">
-          <Toggle1 />
-          <Toggle2 />
+          <button
+            onClick={() => {
+              setActiveTg1(true);
+              setActiveTg2(false);
+            }}
+          >
+            <Toggle1
+              {...{
+                isSelected: isActiveTg1,
+              }}
+            />
+          </button>
+          <button
+            onClick={() => {
+              setActiveTg1(false);
+              setActiveTg2(true);
+            }}
+          >
+            <Toggle2
+              {...{
+                isSelected: isActiveTg2,
+              }}
+            />
+          </button>
         </section>
 
         <div className="flex justify-end mt-10">

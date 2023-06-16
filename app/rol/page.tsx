@@ -3,6 +3,8 @@ import lana from "../resources/images/lana.png";
 import dog_one from "../resources/images/dog_one.png";
 import dog_two from "../resources/images/dog_two.png";
 import icon_button from "../resources/images/Icon_button.png";
+import Image from "next/image";
+
 export default function page() {
   return (
     <section className="section-rol">
@@ -12,7 +14,7 @@ export default function page() {
       <div className="class-rol-title">
         <div className="class-rol-title-img">
           <h1>Escoge tu rol a adoptar</h1>
-          <img src={lana.src} alt="" />
+          <Image src={lana.src} alt="" />
         </div>
         <p>
           ¿Eres una persona que tiene el deseo de darle la bienvenida a una
@@ -30,7 +32,7 @@ export default function page() {
               <strong>adoptar</strong>
             </p>
           </div>
-          <img src={dog_one.src} alt="" />
+          <Image src={dog_one.src} alt="" />
         </a>
         <a className="class-role-section-one">
           <div className="class-role-title2">
@@ -41,7 +43,7 @@ export default function page() {
               <strong>en adopción</strong>
             </p>
           </div>
-          <img src={dog_two.src} alt="" />
+          <Image src={dog_two.src} alt="" />
         </a>
       </div>
       <div className="class-footer-rol">

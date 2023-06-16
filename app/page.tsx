@@ -9,6 +9,7 @@ import pets from "./resources/images/pets.png";
 import useRegisterModal from "./components/hooks/useRegisterModal";
 import { useState } from "react";
 import Hero from "./components/Hero";
+import Image from "next/image";
 
 export default function Home() {
   const registerModal = useRegisterModal();
@@ -47,7 +48,7 @@ export default function Home() {
               onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
-          <img src={dog.src} alt="Image of a dog" />
+          <Image src={dog.src} alt="Image of a dog" />
         </section>
 
         <section className="flex flex-col gap-8 items-center">
@@ -66,7 +67,7 @@ export default function Home() {
               onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
-          <img src={cat.src} alt="Image of a cat" />
+          <Image src={cat.src} alt="Image of a cat" />
         </section>
 
         <section className="flex flex-col gap-8 items-center">
@@ -85,7 +86,7 @@ export default function Home() {
               onClick: () => signIn("google", { callbackUrl: "/register" }),
             }}
           />
-          <img src={pets.src} alt="Images of pets" className="mb-[24px]" />
+          <Image src={pets.src} alt="Images of pets" className="mb-[24px]" />
         </section>
       </div>
 

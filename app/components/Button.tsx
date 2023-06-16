@@ -1,3 +1,4 @@
+import Image from "next/image";
 interface ButtonProps {
     text: string;
     image: string;
@@ -10,7 +11,7 @@ interface ButtonProps {
 export default function Button({ text, image, colorOfButton, classes, alt, onClick }: ButtonProps) {
     return (
         <button className={`${colorOfButton} ${classes}`} onClick={onClick} type="button">
-            {text === "" ? <img src={image} alt={alt} /> : text}
+            {text === "" ? <Image src={image} alt={alt} /> : text}
         </button>
     )
 }

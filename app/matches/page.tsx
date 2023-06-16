@@ -5,6 +5,7 @@ import close from "../resources/images/Close.png";
 import Avatar from "../components/Avatar";
 import getCurrentUser from "../actions/getCurrentUser";
 import Link from 'next/link'
+import Image from "next/image";
 
 const HomeRegister = async () => {
   const currentUser = await getCurrentUser();
@@ -15,18 +16,18 @@ const HomeRegister = async () => {
           <Avatar src={currentUser?.image} />
           <h2>{currentUser?.name}</h2>
         </div>
-        <Link href={`/matches/${1}`}><img src={arrow.src} alt="next" className="full-black px-[8px] py-[8px] w-[40px] h-[40px]" /></Link>
+        <Link href={`/matches/${1}`}><Image src={arrow.src} alt="next" className="full-black px-[8px] py-[8px] w-[40px] h-[40px]" /></Link>
       </div>
       <div className="w-full my-[16px] relative flex items-center justify-center rounded-[16px]">
-        <img src={catTinder.src} alt="cat" className="w-full h-[576px]" />
+        <Image src={catTinder.src} alt="cat" className="w-full h-[576px]" />
         <p className="absolute bottom-[16px] mx-[16px]">
           <span className="card-title block mb-[8px]">Juan<span className='text-[#6262DB] mx-[4px]'>~</span><span className="card-subtitle">1 año</span></span>
           <span className="card-text ">Gato copo de nieve amoroso curioso jugueton ideal para cualquiera</span>
         </p>
       </div>
       <div className="flex mx-[84px]">
-        <button className="bg-black text-white px-6 py-2 mr-[24px]" type="submit"> <img src={close.src} alt="not match" /> </button>
-        <button className="bg-primary text-white px-6 py-2 w-[112px]" type="submit"> <img src={heart.src} alt="match" /> </button>
+        <button className="bg-black text-white px-6 py-2 mr-[24px]" type="submit"> <Image src={close.src} alt="not match" /> </button>
+        <button className="bg-primary text-white px-6 py-2 w-[112px]" type="submit"> <Image src={heart.src} alt="match" /> </button>
       </div>
     </main>
   );

@@ -74,7 +74,7 @@ const LoginModal = () => {
     <div className="flex flex-col gap-4">
       <Heading
         title="Bienvenido"
-        subtitle="Ingresa a su cuenta!"
+        subtitle="¡Ingresa a su cuenta!"
       />
       <Input
         id="email"
@@ -105,12 +105,6 @@ const LoginModal = () => {
         icon={FcGoogle}
         onClick={() => signIn('google')}
       />
-      <Button 
-        outline 
-        label="Continuar con Github"
-        icon={AiFillGithub}
-        onClick={() => signIn('github')}
-      />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
         <p>¿Primera vez que usas Colitas?
@@ -131,7 +125,7 @@ const LoginModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="Login"
+      title="LOGIN"
       actionLabel="Continuar"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}

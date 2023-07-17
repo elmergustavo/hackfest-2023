@@ -37,30 +37,23 @@ export const manufacturers = [
   
   export const footerLinks = [
     {
-      title: "About",
+      title: "UX/UI Designer",
       links: [
-        { title: "How it works", url: "/" },
-        { title: "Featured", url: "/" },
-        { title: "Partnership", url: "/" },
-        { title: "Bussiness Relation", url: "/" },
+        { title: "Kelvin Cano", url: "https://github.com/Allecan" }
       ],
     },
     {
-      title: "Company",
+      title: "Front-end Developer",
       links: [
-        { title: "Events", url: "/" },
-        { title: "Blog", url: "/" },
-        { title: "Podcast", url: "/" },
-        { title: "Invite a friend", url: "/" },
+        { title: "Fernando Juárez", url: "https://github.com/Rafterminador" },
+        { title: "Elmer Gustavo", url: "https://github.com/elmergustavo" }
       ],
     },
     {
-      title: "Socials",
+      title: "Back-end Developer",
       links: [
-        { title: "Discord", url: "/" },
-        { title: "Instagram", url: "/" },
-        { title: "Twitter", url: "/" },
-        { title: "Facebook", url: "/" },
+        { title: "Zoila Sánchez", url: "https://github.com/ZoilaSanchez" },
+        { title: "José Tistoj", url: "https://github.com/danieltistoj" }
       ],
     },
   ];

@@ -53,8 +53,8 @@ export default function Home() {
         <section className="flex flex-col gap-8 items-center">
           <h2>Dale la bienvenida a una naricita fría</h2>
           <p className="leading-[140%] text-center text-[#474747] text-base">
-            Anímate a encontrar el match perfecto para el resto de tu vida, tu
-            nuevo mejor amigo y vos lo agradecerán
+          ¡No esperes más y embárcate en la búsqueda de la mascota perfecta! 
+          Encontrarlo será una experiencia que nunca olvidarás.
           </p>
           <Button
             {...{

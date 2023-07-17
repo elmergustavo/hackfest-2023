@@ -28,10 +28,9 @@ const Hero = () => {
         <h2 className="hero__title text-primary-200 text-start">
           Dale la bienvenida a una naricita fría
         </h2>
-
         <p className="hero__subtitle">
-          Anímate a encontrar el match perfecto para el resto de tu vida, tu
-          nuevo mejor amigo y vos lo agradecerán
+          ¡No esperes más y embárcate en la búsqueda de la mascota perfecta! 
+          
         </p>
 
         <div className="w-1/2">

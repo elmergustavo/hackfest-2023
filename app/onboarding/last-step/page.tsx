@@ -23,9 +23,9 @@ export default function HomeRol() {
             <h1 className="text-left mt-[56px]">¡Yaay!</h1>
             <p className="mt-[16px] mb-[32px]">
                 {" "}
-                Que genial tenerte listo en la aplicación, a que esperas !{" "}
+                ¡Que genial tenerte listo en la aplicación, que esperas !{" "}
             </p>
-            <p> Ve a hacer que esas colitas se pongan felices ! </p>
+            <p> Haz que esas naricitas frías se pongan Felices </p>
             <img src={cuteCat.src} alt="Cute cat" className="my-[32px]" />
             <div className="flex items-center flex-col">
                 <Button

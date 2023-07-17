@@ -68,8 +68,8 @@ const RegisterModal= () => {
   const bodyContent = (
     <div className="flex flex-col gap-4">
       <Heading
-        title="Bienvenido a colitas"
-        subtitle="Crea tu cuenta!"
+        title="Bienvenido a Colitas"
+        subtitle="¡Crea tu cuenta!"
       />
       <Input
         id="email"
@@ -81,7 +81,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Nomrbre"
+        label="Nombre"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -107,12 +107,6 @@ const RegisterModal= () => {
         label="Continuar con Google"
         icon={FcGoogle}
         onClick={() => signIn('google', {callbackUrl: '/matches'})} 
-      />
-      <Button 
-        outline 
-        label="Continuar con Github"
-        icon={AiFillGithub}
-        onClick={() => signIn('github', {callbackUrl: '/matches'})} 
       />
       <div 
         className="
@@ -140,7 +134,7 @@ const RegisterModal= () => {
     <Modal
       disabled={isLoading}
       isOpen={registerModal.isOpen}
-      title="Registrarse"
+      title="REGISTRARSE"
       actionLabel="Continuar"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}

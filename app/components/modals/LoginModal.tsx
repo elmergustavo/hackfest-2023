@@ -74,7 +74,7 @@ const LoginModal = () => {
     <div className="flex flex-col gap-4">
       <Heading
         title="Bienvenido"
-        subtitle="¡Ingresa a su cuenta!"
+        subtitle="¡Ingresa a tu cuenta!"
       />
       <Input
         id="email"
@@ -125,7 +125,7 @@ const LoginModal = () => {
     <Modal
       disabled={isLoading}
       isOpen={loginModal.isOpen}
-      title="LOGIN"
+      title="Iniciar Sesión"
       actionLabel="Continuar"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
